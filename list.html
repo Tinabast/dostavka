@@ -1,0 +1,834 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<meta charset="utf8">
+
+	</head>
+	<body>
+		<div class="texture texture__white header-wrapper">
+			<div class="container">
+				<header class="header grid-inline grid-inline_a">
+					<div class="column column_a">
+						<div class="logo-wrapper">
+							<img class="logo" src="images/logo.png">
+						</div>
+					</div>
+					<div class="column column_b">
+						<div class="grid-float clearfix">
+							<div class="column left">
+								<i class="icon icon_main-sprite icon_phone"></i>
+								<span class="phone-number">
+									+38 (099) <span class="phone-number_red">1</span>-923-923
+								</span>							
+							</div>
+							<div class="column right">
+								<i class="icon icon_main-sprite icon_mobile"></i>
+								<span class="phone-number">
+									+38 (099) <span class="gc-red">1</span>-923-923
+								</span>	
+							</div>
+						</div>
+						<div class="callback">
+							<a href="#" class="callback_link">Перезвонить вам?</a>
+						</div>
+						<hr class="gray-divider">
+						<div>
+							<i class="icon icon_main-sprite icon_clock"></i>
+							<span class="online-order-text">
+								<strong>Онлайн заказы</strong>
+								принимаются
+								<strong class="gc-red">с 10:00 до 22:00</strong>
+							</span>
+						</div>
+					</div>
+					<div class="column column_c">
+						<div class="current-order">
+							<div class="current-order_content">
+								<h3 class="current-order_title">Ваш заказ:</h3>
+								<hr class="gray-divider">
+								<div class="current-order_details">
+									<table class="current-order_table">
+										<tr>
+											<th>Товар</th>
+											<th>Кол-во</th>
+											<th>Цена</th>
+											<th></th>
+										</tr>
+										<tr>
+											<td>Отбивная "Хуторок"</td>
+											<td>
+												<input type="number" class="current-order_amount input_gray" value=2>
+											</td>
+											<td>190р</td>
+											<td><button class="btn_icon"><i class="icon icon_main-sprite icon_red-cross"></button></i></td>
+										</tr>
+										<tr>
+											<td>Отбивная "Хуторок"</td>
+											<td>
+												<input type="number" class="current-order_amount input_gray" value=2>
+											</td>
+											<td>190р</td>
+											<td><button class="btn_icon"><i class="icon icon_main-sprite icon_red-cross"></button></i></td>
+										</tr>
+										<tr>
+											<td>Отбивная "Хуторок"</td>
+											<td>
+												<input type="number" class="current-order_amount input_gray" value=2>
+											</td>
+											<td>190р</td>
+											<td><button class="btn_icon"><i class="icon icon_main-sprite icon_red-cross"></button></i></td>
+										</tr>
+									</table>
+									<hr class="gray-divider">
+								</div>
+								<p class="current-order_text">
+									3 товара на сумму 540 р.
+								</p>
+								<p class="current-order_text">
+									<a class="current-order_link details-trigger hide-details" href="#">
+										Скрыть товары
+									</a>
+									<a class="current-order_link details-trigger show-details" href="#">
+										Показать товары
+									</a>
+								</p>
+
+							</div>
+							<hr class="comb-divider">
+							<div class="current-order_btn-container">
+								<button class="btn btn_red order-submit" data-popup="current-order_popup">Оформить заказ
+								</button>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="nav-wrapper texture texture__gray">
+					<ul class="nav grid-justified">
+						<li class="nav__item column">
+							<a class="nav__link" href="#">
+								Корчма "Хуторок"
+							</a>
+						</li>
+						<li class="nav__item column">
+							<a class="nav__link" href="#">
+								Кафе "Венеция"
+							</a>
+						</li>
+						<li class="nav__item column">
+							<a class="nav__link" href="#">
+								Корчма "Диканька"
+							</a>
+						</li>
+						<li class="nav__item column">
+							<a class="nav__link" href="#">
+								Кафе "Ева"
+							</a>
+						</li>
+						<li class="nav__item column">
+							<a class="nav__link" href="#">
+								Столовая "У Мамы"
+							</a>
+						</li>
+						<li class="nav__item column">
+							<a class="nav__link" href="#">
+								Трактир Купца Сарибана
+							</a>
+						</li>				
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<div class="texture texture__white content-wrapper">
+			<div class="container">
+				<div class="grid-inline grid-inline_b v-centered">
+					<div class="column column_a">
+						<a href="#">
+							<img src="images/farm.png"></img>
+						</a>
+					</div>
+					<div class="column column_b">
+						<ul class="menu-list">
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Холодные закуски
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Горячие закуски
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Первые блюда
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Салаты мясные
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Салаты овощные
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Салаты из рыбы и морепродуктов
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Блюда из курицы
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Блюда из свинины
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Блюда из баранины
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Блюда из говядины
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Блюда из рыбы и морепродуктов
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Горячая тарелка
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Блинчики
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Вареники
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Пельмени
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Гарниры
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="page-subtitle">
+					Горячие закуски
+				</h2>
+				<div class="grid-inline grid-inline_b">
+					<div class="column column_b">
+						<div class="grid-inline">
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/chop-farm.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Отбивная "Хуторок"
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(свинина, кур. Филе, чернослив, грецкий орех, сыр)
+								</div>
+								<div class="card-item__output">
+									Выход: 250/60
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										190 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/dolma.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Долма
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(виноградные листья, свинина, говядина)
+								</div>
+								<div class="card-item__output">
+									Выход: 145/50
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										90 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/chicken.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Куриная отбивная с сыром и грибами
+									</h3>
+								</div>
+								<div class="card-item__datails">
+								</div>
+								<div class="card-item__output">
+									Выход: 200/60
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										130 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/golubtsy.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Голубцы
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(свинина, говядина)
+								</div>
+								<div class="card-item__output">
+									Выход: 215/50
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										190 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/dolma.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Долма
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(виноградные листья, свинина, говядина)
+								</div>
+								<div class="card-item__output">
+									Выход: 145/50
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										90 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/chicken.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Куриная отбивная с сыром и грибами
+									</h3>
+								</div>
+								<div class="card-item__datails">
+								</div>
+								<div class="card-item__output">
+									Выход: 200/60
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										130 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/golubtsy.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Голубцы
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(свинина, говядина)
+								</div>
+								<div class="card-item__output">
+									Выход: 215/50
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										190 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/dolma.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Долма
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(виноградные листья, свинина, говядина)
+								</div>
+								<div class="card-item__output">
+									Выход: 145/50
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										90 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/chicken.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Куриная отбивная с сыром и грибами
+									</h3>
+								</div>
+								<div class="card-item__datails">
+								</div>
+								<div class="card-item__output">
+									Выход: 200/60
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										130 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/golubtsy.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Голубцы
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(свинина, говядина)
+								</div>
+								<div class="card-item__output">
+									Выход: 215/50
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										190 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/dolma.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Долма
+									</h3>
+								</div>
+								<div class="card-item__datails">
+									(виноградные листья, свинина, говядина)
+								</div>
+								<div class="card-item__output">
+									Выход: 145/50
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										190 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third card-item">
+								<div class="card-item__image-wrapper v-centered">
+									<img class="card-item__image" src="images/chicken.png">
+								</div>
+								<div class="card-item__title-wrapper">
+									<h3 class="card-item__title">
+										Куриная отбивная с сыром и грибами
+									</h3>
+								</div>
+								<div class="card-item__datails">
+								</div>
+								<div class="card-item__output">
+									Выход: 200/60
+								</div>
+								<div class="card-item__bottom clearfix">
+									<div class="card-item__price">
+										130 a
+									</div>
+									<button class="btn btn_red card-item__button">
+										Хочу
+									</button>
+								</div>
+							</div>
+							<div class="column one-third">
+							</div>
+							<div class="column one-third">
+							</div>
+						</div>
+					</div>
+					<aside class="column column_a sidebar">
+						<form class="search-form" id="search-form">
+							<fieldset class="search-group">
+								<input type="text" id="search-field" name="search-field" class="search-field input_gray" placeholder="Поиск по сайту">
+								<button type="submit" id="search-submit" class="btn btn_icon search-submit">
+									<i class="icon icon_main-sprite icon_magn-glass"></i>
+								</button>
+							</fieldset>
+						</form>
+						<h2 class="page-subtitle">
+							Популярные категории:
+						</h2>
+						<ul class="menu-list">
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Суши и роллы
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Пицца
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Шашлык
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Салаты
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Стейки и рыба
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Грузинская кухня
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Напитки
+								</a>
+							</li>
+							<li class="menu-list__item list-inline">
+								<a class="menu-list__link" href="#">
+									Десерты
+								</a>
+							</li>
+						</ul>
+						<ul class="sidebar-nav">
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_sushi_small"></i>
+									<span  class="sidebar-nav__text">
+										Суши и роллы
+									</span>
+								</a>
+							</li>
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_pizza_small"></i>
+									<span  class="sidebar-nav__text">
+										Пицца
+									</span>
+								</a>
+							</li>
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_kebab_small"></i>
+									<span  class="sidebar-nav__text">
+										Шашлык
+									</span>
+								</a>
+							</li>
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_salad_small"></i>
+									<span  class="sidebar-nav__text">
+										Салаты
+									</span>
+								</a>
+							</li>
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_steak_small"></i>
+									<span  class="sidebar-nav__text">
+										Стейки и рыба
+									</span>
+								</a>
+							</li>
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_georgia_small"></i>
+									<span  class="sidebar-nav__text">
+										Грузинская кухня
+									</span>
+								</a>
+							</li>
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_drinks_small"></i>
+									<span  class="sidebar-nav__text">
+										Напитки
+									</span>
+								</a>
+							</li>
+							<li class="sidebar-nav__item">
+								<a class="sidebar-nav__link" href="#">
+									<i class="icon icon_main-sprite icon_sweets_small"></i>
+									<span  class="sidebar-nav__text">
+										Десерты
+									</span>
+								</a>
+							</li>
+						</ul>
+					</aside>
+					
+				</div>
+			</div>
+		</div>
+		<div class="texture texture__gray footer-wrapper">
+			<footer class="container footer-container">
+				<div class="grid-inline grid-inline_footer">
+					<div class="column column_a">
+						<h3 class="title_footer">Рестораны</h3>
+						<ul class="footer-nav">
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">
+									Корчма "Хуторок"
+								</a>
+							</li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">
+									Кафе "Ева"
+								</a>
+							</li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">
+									Корчма "Диканька"
+								</a>
+							</li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">
+									Кафе "Венеция"
+								</a>
+							</li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">
+									Столовая "У мамы"
+								</a>
+							</li>
+							<li class="footer-nav__item">
+								<a class="footer-nav__link" href="#">
+									Трактир купца Сарибана
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="column column_b">
+						<h3 class="title_footer">Блюда</h3>
+						<ul class="footer-nav">
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Суши и роллы
+								</a>
+							</li>
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Стейки и рыба
+								</a>
+							</li>
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Пицца
+								</a>
+							</li>
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Грузинская кухня
+								</a>
+							</li>
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Шашлык
+								</a>
+							</li>
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Напитки
+								</a>
+							</li>
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Салаты
+								</a>
+							</li>
+							<li class="footer-nav__item list-inline">
+								<a class="footer-nav__link" href="#">
+									Десерты
+								</a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="column column_c">
+						<h3 class="title_footer">Контакты</h3>
+						<p class="common-text">
+							+38 (099) 1-923-923
+						</p>
+						<p class="common-text">
+							+7 (978) 780-923-1
+						</p>
+						<p class="common-text">
+							Заказы Online (с сайта) принимаются с 10-00 до 22-00
+						</p>
+					</div>
+				</div>
+				<p class="copyright">
+					Copyright &copy; 2014. Доставка №1 - все права защищены.
+				</p>
+			</footer>
+		</div>
+		<button class="button-to-top"><i class="icon icon_main-sprite icon_top-arrow"></i>Наверх</button>
+		<div class="popup-wrapper hidden" id="current-order_popup">
+			<div class="container popup-container">
+				<form>
+					<div class="current-order_content">
+						<h3 class="popup-title">
+							Ваш заказ:
+						</h3>
+						<table class="current-order_table">
+							<tr>
+								<th>Товар</th>
+								<th>Кол-во</th>
+								<th>Цена</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Отбивная "Хуторок"</td>
+								<td>
+									<input type="number" class="current-order_amount input_gray" value=2>
+								</td>
+								<td>190 р</td>
+								<td><button class="btn_icon"><i class="icon icon_main-sprite icon_red-cross"></button></i></td>
+							</tr>
+							<tr>
+								<td>Отбивная "Хуторок"</td>
+								<td>
+									<input type="number" class="current-order_amount input_gray" value=2>
+								</td>
+								<td>190 р</td>
+								<td><button class="btn_icon"><i class="icon icon_main-sprite icon_red-cross"></button></i></td>
+							</tr>
+							<tr>
+								<td>Отбивная "Хуторок"</td>
+								<td>
+									<input type="number" class="current-order_amount input_gray" value=2>
+								</td>
+								<td>190 р</td>
+								<td><button class="btn_icon"><i class="icon icon_main-sprite icon_red-cross"></button></i></td>
+							</tr>
+						</table>
+						<hr class="gray-divider">
+						<p class="current-order_text">
+							4 товара на сумму
+							<span class="c-red">540р</span>
+						</p>
+						<h3 class="popup-title">
+							Ваши данные:
+						</h3>
+						<div class="form-row">
+							<label class="lbl" for="order-name">Имя</label>
+							<input type="text" id="order-name" name="order-name" class="input input_gray input-half">
+							<label class="lbl lbl-half" for="order-email">E-mail</label>
+							<input type="text" id="order-email" name="order-email" class="input input_gray input-half">
+						</div>
+						<div class="form-row">
+							<label class="lbl" for="order-phone">Телефон</label>
+							<input type="text" id="order-phone" name="order-phone" class="input input_gray">
+						</div>
+						<div class="form-row">
+							<label class="lbl" for="order-address">Адрес</label>
+							<input type="text" id="order-address" name="order-address" class="input input_gray">
+						</div>
+					</div>
+					<hr class="comb-divider">
+					<div class="current-order_btn-container">
+						<button class="brn btn_red order-submit">Оформить заказ
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script type="text/javascript" src="vendor/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="vendor/js/jquery.cycle2.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+	</body>
+</html>
