@@ -68,6 +68,28 @@ $(function () {
 		   $topButton.addClass('btn_disabled');
 		});
 	});
+
+	/* LOGO */
+
+	function rotateLogo () {
+		var $logo = $('.logo-wrapper'),
+			width = $logo.width();
+
+		$logo.css({
+			position: "relative"
+		})
+
+		$logo.animate({
+			width: '0',
+			left: (width / 2) + "px"
+		}).
+		animate({
+			width: width,
+			left: 0		
+		})
+	}
+
+	setInterval(rotateLogo, 3000);
 });
 
 }) (jQuery, window);

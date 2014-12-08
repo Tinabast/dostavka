@@ -592,11 +592,30 @@ ul {
 	height: 67px;
 	background: #d23230;
 }
+.nav__item:before {
+	content: "";
+}
+.nav__item:hover .nav__link:before,
+.nav__item:hover .nav__link:after {
+	content: "";
+	position: absolute;
+	border: 2px solid #821c1b;
+	left: 100%;
+	z-index: 0;
+}
+.nav__item:hover .nav__link:before {
+	top: -25%;
+	border-top: 4px solid transparent;
+	border-right: 4px solid transparent;
+}
+.nav__item:hover .nav__link:after {
+	top: 110%;
+	border-right: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+}
 .nav__link {
-	position: relative;
 	text-align: center;
 	height: 45px;
-	line-height: 45px;
 	width: 100%;
 	font-family: 'Segoe UI';
 	font-weight: 500;
@@ -604,13 +623,13 @@ ul {
 	color: #ffffff;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, .75);
 	text-decoration: none;
+}
+.nav__link-text {
+	position: relative;
 	z-index: 3;
 }
 .nav__link:hover {
 	text-decoration: underline;
-}
-.nav__link-text {
-	display: inline-block;
 }
 .content-wrapper .container {
 	position: relative;
@@ -619,6 +638,35 @@ ul {
 .menu-link__image {
 	height: 100px;
 	text-align: center;
+}
+.menu-link__icon-hover {
+	position: relative;
+}
+.menu-link__icon {
+	border-radius: 50%;
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(177, 177, 177, 1);
+	-moz-box-shadow:    2px 2px 2px 0px rgba(177, 177, 177, 1);
+	box-shadow:         2px 2px 2px 0px rgba(177, 177, 177, 1);
+}
+.menu-link:hover .menu-link__icon {
+	opacity: 0;
+	transition: opacity 1s;
+}
+.menu-link:hover .menu-link__title span {
+	text-decoration: underline;
+}
+.menu-link:hover .menu-link__icon-hover {
+	background-image: url("../images/main-sprite.png");
+}
+.menu-link .menu-link__icon-hover {
+	background-image: none;
+}
+.menu-link__icon {
+	position: absolute;
+	left: 0;
+	top: -1px;
 }
 .menu-link__title {
 	font-family: 'Verdana';
@@ -775,7 +823,7 @@ ul {
 .current-order.fixed {
 	position: fixed;
 	top: 0;
-	z-index: 100;
+	z-index: 1000;
 }
 .current-order_details,
 .details-trigger.hide-details {
@@ -818,12 +866,12 @@ ul {
 	width: 37px;
 	margin-right: 13px;
 }
-.icon_sushi {
+.icon_sushi, .icon_sushi_hover {
 	background-position: 0 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_sushi:hover {
+.icon_sushi_hover {
 	background-position: 0 -94px;
 }
 .icon_sushi_small {
@@ -834,12 +882,12 @@ ul {
 .icon_sushi_small:hover {
 	background-position: 0 -409px;
 }
-.icon_pizza {
+.icon_pizza, .icon_pizza_hover {
 	background-position: -95px 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_pizza:hover {
+.icon_pizza_hover {
 	background-position: -94px -94px;
 }
 .icon_pizza_small {
@@ -851,12 +899,12 @@ ul {
 	background-position: -64px -409px;
 }
 
-.icon_kebab {
+.icon_kebab, .icon_kebab_hover {
 	background-position: -189px 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_kebab:hover {
+.icon_kebab_hover {
 	background-position: -188px -94px;
 }
 .icon_kebab_small {
@@ -868,12 +916,12 @@ ul {
 	background-position: -128px -409px;
 }
 
-.icon_salad {
+.icon_salad, .icon_salad_hover {
 	background-position: -283px 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_salad:hover {
+.icon_salad_hover {
 	background-position: -282px -94px;
 }
 .icon_salad_small {
@@ -885,12 +933,12 @@ ul {
 	background-position: -192px -409px;
 }
 
-.icon_steak {
+.icon_steak, .icon_steak_hover {
 	background-position: -377px 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_steak:hover {
+.icon_steak_hover {
 	background-position: -376px -94px;
 }
 .icon_steak_small {
@@ -902,13 +950,13 @@ ul {
 	background-position: -256px -409px;
 }
 
-.icon_georgia {
+.icon_georgia, .icon_georgia_hover {
 	background-position: -471px 0;
 	height: 94px;
 	width: 94px;
 }
 
-.icon_georgia:hover {
+.icon_georgia_hover {
 	background-position: -470px -94px;
 }
 .icon_georgia_small {
@@ -919,12 +967,12 @@ ul {
 .icon_georgia_small:hover {
 	background-position: -320px -409px;
 }
-.icon_drinks {
+.icon_drinks, .icon_drinks_hover {
 	background-position: -565px 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_drinks:hover {
+.icon_drinks_hover {
 	background-position: -564px -94px;
 }
 .icon_drinks_small {
@@ -936,12 +984,12 @@ ul {
 	background-position: -384px -409px;
 }
 
-.icon_sweets {
+.icon_sweets, .icon_sweets_hover {
 	background-position: -659px 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_sweets:hover {
+.icon_sweets_hover {
 	background-position: -658px -94px;
 }
 .icon_sweets_small {
@@ -983,7 +1031,7 @@ ul {
 	height: 100%;
 	width: 100%;
 	background-color: RGBA(54,54,54,.7);
-	z-index: 1000;
+	z-index: 1001;
 }
 .popup-wrapper.hidden {
 	display: none;
@@ -1084,7 +1132,7 @@ ul {
 	position: fixed;
 	bottom: 300px;
 	left: 67px;
-	height: 76px;
+	height: 79px;
 	background: none;
 	border: none;
 	outline: none;
