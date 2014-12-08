@@ -582,6 +582,15 @@ ul {
 .nav__item:last-child:after {
 	content: ""
 }
+.nav__item:before {
+	content: "";
+}
+.nav__link:before {
+	content: "";
+}
+.nav__link:after {
+	content: "";
+}
 .nav__link {
 	font-family: 'Segoe UI';
 	font-weight: 500;
@@ -600,6 +609,27 @@ ul {
 .menu-link__image {
 	height: 100px;
 	text-align: center;
+}
+.menu-link__icon-hover {
+	position: relative;
+}
+.menu-link:hover .menu-link__icon {
+	opacity: 0;
+	transition: all 1s;
+}
+.menu-link:hover .menu-link__title span {
+	text-decoration: underline;
+}
+.menu-link:hover .menu-link__icon-hover {
+	background-image: url("../images/main-sprite.png");
+}
+.menu-link .menu-link__icon-hover {
+	background-image: none;
+}
+.menu-link__icon {
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .menu-link__title {
 	font-family: 'Verdana';
@@ -756,7 +786,7 @@ ul {
 .current-order.fixed {
 	position: fixed;
 	top: 0;
-	z-index: 100;
+	z-index: 1000;
 }
 .current-order_details,
 .details-trigger.hide-details {
@@ -799,12 +829,12 @@ ul {
 	width: 37px;
 	margin-right: 13px;
 }
-.icon_sushi {
+.icon_sushi, .icon_sushi_hover {
 	background-position: 0 0;
 	height: 94px;
 	width: 94px;
 }
-.icon_sushi:hover {
+/*.icon_sushi:hover, */.icon_sushi_hover {
 	background-position: 0 -94px;
 }
 .icon_sushi_small {
@@ -964,7 +994,7 @@ ul {
 	height: 100%;
 	width: 100%;
 	background-color: RGBA(54,54,54,.7);
-	z-index: 1000;
+	z-index: 1001;
 }
 .popup-wrapper.hidden {
 	display: none;
@@ -1065,7 +1095,7 @@ ul {
 	position: fixed;
 	bottom: 300px;
 	left: 67px;
-	height: 76px;
+	height: 79px;
 	background: none;
 	border: none;
 	outline: none;
