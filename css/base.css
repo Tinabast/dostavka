@@ -584,8 +584,7 @@ ul {
 .nav__item:last-child:after {
 	content: ""
 }
-.nav__item.active .nav__link:before,
-.nav__item:hover .nav__link:before {
+.nav__item.active .nav__link:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -594,8 +593,6 @@ ul {
 	height: 67px;
 	background: #d23230;
 }
-.nav__item:hover:before,
-.nav__item:hover .nav__link:after,
 .nav__item.active:before,
 .nav__item.active .nav__link:after {
 	content: "";
@@ -604,13 +601,11 @@ ul {
 	left: 100%;
 	z-index: 0;
 }
-.nav__item:hover:before,
 .nav__item.active:before {
 	top: -10px;
 	border-top: 2px solid transparent;
 	border-right: 2px solid transparent;
 }
-.nav__item:hover .nav__link:after,
 .nav__item.active .nav__link:after {
 	top: 51px;
 	border-right: 2px solid transparent;
