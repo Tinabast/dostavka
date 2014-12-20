@@ -72,8 +72,7 @@ $(function () {
 	/* LOGO */
 
 	function rotateLogo () {
-		var $logo = $('.logo-wrapper'),
-			width = $logo.width();
+		var $logo = $('.logo');
 
 		$logo.css({
 			position: "relative"
@@ -81,10 +80,10 @@ $(function () {
 
 		$logo.animate({
 			width: '0',
-			left: (width / 2) + "px"
+			left: "50%"
 		}).
 		animate({
-			width: width,
+			width: "100%",
 			left: 0		
 		})
 	}
