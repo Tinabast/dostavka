@@ -1209,6 +1209,9 @@ ul {
 	font-style: italic;
 	color: #d43331;
 }
+.sidebar-nav__item {
+	margin-bottom: 12px;
+}
 .sidebar-nav__link {
 	font-family: Verdana, Helvetica, Sans-serif;
 	font-size: 16px;
