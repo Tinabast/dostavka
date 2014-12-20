@@ -89,6 +89,11 @@ ul {
 	font-size: 22px;
 	text-align: center;
 }
+.common-text_m {
+	font-size: 16px;
+	text-align: left;
+	line-height: 1.5;
+}
 .texture__red .common-text {
 	color: #FFF;
 }
@@ -1020,6 +1025,12 @@ ul {
 	width: 14px;
 	height: 14px;
 	background-position: -157px 277px;
+}
+.icon_smile {
+	width: 64px;
+	height: 65px;
+	background-position: -332px -236px;
+	margin-right: 21px;
 }
 
 /* POPUPS */
