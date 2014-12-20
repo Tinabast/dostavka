@@ -84,8 +84,11 @@ ul {
 	padding-top: 20px;
 	box-sizing: border-box;
 }
+.column_b_container {
+	width: 600px;
+}
 .common-text {
-	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', Helvetica, sans-serif;
 	font-size: 22px;
 	text-align: center;
 }
@@ -93,6 +96,12 @@ ul {
 	font-size: 16px;
 	text-align: left;
 	line-height: 1.5;
+}
+.alert-text {
+	margin: 45px 0;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #c52d2c;
 }
 .texture__red .common-text {
 	color: #FFF;
@@ -1027,9 +1036,9 @@ ul {
 	background-position: -157px 277px;
 }
 .icon_smile {
-	width: 64px;
-	height: 65px;
-	background-position: -332px -236px;
+	width: 62px;
+	height: 61px;
+	background-position: -335px -240px;
 	margin-right: 21px;
 }
 
