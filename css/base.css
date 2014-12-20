@@ -276,7 +276,9 @@ ul {
 	width: 220px;
 	margin-right: 20px;
 }
-
+.grid-inline_b .grid-inline_b .column_b {
+	width: 435px;
+}
 .column-sample {
 	height: 40px;
 }
@@ -1168,7 +1170,18 @@ ul {
 }
 
 /* LIST PAGE */
-
+.page-title {
+	font-family: 'NautilusPompilius';
+	font-size: 40px;
+	color: #c52d2c;
+	font-weight: 300;
+}
+.page-title_xl {
+	font-size: 100px;
+}
+.page-title_high {
+	line-height: 100px;
+}
 .page-subtitle {
 	font-family: 'Segoe UI';
 	font-size: 18px;
