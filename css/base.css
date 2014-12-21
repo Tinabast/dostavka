@@ -293,6 +293,16 @@ ul {
 .grid-inline_b .grid-inline_b .column_b {
 	width: 435px;
 }
+.grid-inline_popup {
+	margin: 0 auto;
+	padding: 20px 20px 0;
+}
+.grid-inline_popup .column_a {
+	width: 110px;
+}
+.grid-inline_popup .column_b {
+	width: 370px;
+}
 .column-sample {
 	height: 40px;
 }
@@ -1051,6 +1061,11 @@ ul {
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
+.icon_tick {
+width: 62px;
+height: 61px;
+background-position: -403px -237px;
+}
 
 /* POPUPS */
 
@@ -1205,6 +1220,7 @@ ul {
 	font-size: 40px;
 	color: #c52d2c;
 	font-weight: 300;
+	text-align: center;
 }
 .page-title_xl {
 	font-size: 100px;
@@ -1304,6 +1320,10 @@ ul {
 }
 .popup-wrapper .current-order_text {
 	text-align: right;
+}
+.popup-text {
+	font-family: 'Segoe UI';
+	font-size: 18px;
 }
 
 @media (max-width: 767px) {
