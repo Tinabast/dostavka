@@ -30,7 +30,7 @@
 							</div>
 						</div>
 						<div class="callback">
-							<a href="#" class="callback_link">Перезвонить вам?</a>
+							<a href="#" class="callback_link" data-popup="call_popup">Перезвонить вам?</a>
 						</div>
 						<hr class="gray-divider">
 						<div>
@@ -487,6 +487,31 @@
 				</p>
 			</footer>
 		</div>
+		<div class="popup-wrapper hidden" id="call_popup">
+			<div class="container popup-container">
+				<form>
+					<div class="current-order_content">
+						<h3 class="popup-title">
+							Перезвонить вам:
+						</h3>
+						<div class="form-row">
+							<label class="lbl" for="call_phone">Телефон</label>
+							<input type="text" id="call_phone" name="order-phone" class="input input_gray">
+						</div>
+						<div class="form-row">
+							<label class="lbl" for="call_name">Имя</label>
+							<input type="text" id="call_name" name="order-address" class="input input_gray">
+						</div>
+					</div>
+					<hr class="comb-divider">
+					<div class="current-order_btn-container">
+						<button class="btn btn_red order-submit">Отправить
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
 		<button class="button-to-top btn_disabled"><i class="icon icon_main-sprite icon_top-arrow"></i>Наверх</button>
 		<script type="text/javascript" src="vendor/js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="vendor/js/jquery.cycle2.min.js"></script>
