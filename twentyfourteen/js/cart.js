@@ -3,9 +3,11 @@ $(document).ready(function(){
     	var button = $(this);
     	$.get($(button).data('href'))
     	.done(function() {
+			console.log("get is done!");
             $.when(
                 $.post('/wp-admin/admin-ajax.php', 'action=showsmallcart'), 
                 $.post('/wp-admin/admin-ajax.php', 'action=showfullcart')).done(function(resp1, resp2){
+					console.log("post is done!");
                     $('header .column_c').html(resp1[0]);
                     $('#current-order_popup').html(resp2[0]);
                     $().mini_cart();
@@ -45,15 +47,21 @@ $(document).ready(function(){
     $('body').on('submit', '.orderForm', function(event){
         event.preventDefault();
         $.post('/корзина/', $(this).serialize(), function(resp){
-            error = $(resp).find('ul.error');
-            error = error.prevObject[2].innerHTML;
+            var error = $(resp).find('ul.error'),
+				errorHTML;
             $.when(
                 $.post('/wp-admin/admin-ajax.php', 'action=showsmallcart'), 
                 $.post('/wp-admin/admin-ajax.php', 'action=showfullcart')).done(
                     function(resp1, resp2){
                         $('header .column_c').html(resp1[0]);
                         $('#current-order_popup').html(resp2[0]);
-                        $('#current-order_popup .current-order_content').append(error);
+						if (resp.indexOf('class="error"') !== -1) {
+							errorHTML = error.prevObject[2].innerHTML;
+							$('#current-order_popup .current-order_content').append(errorHTML);
+						} else {
+							$('.popup-wrapper').addClass('hidden');
+							$('#order-success_popup').removeClass('hidden');
+						}
                         $().mini_cart();
                     }
                 );

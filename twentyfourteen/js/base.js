@@ -68,6 +68,25 @@ $(function () {
 		   $topButton.addClass('btn_disabled');
 		});
 	});
+	
+	/* CALLBACK FORM */
+	$('body').on('submit', '#call_popup form', function() {
+		var name = $('#call_name').val(),
+			phone = $('#call_phone').val();
+			
+		if (name && phone) {
+			$.post('/wp-admin/admin-ajax.php', {action: 'callback', name: name, phone: phone}).done(function() {
+				$('.popup-wrapper').addClass('hidden');
+				$('#order-success_popup').removeClass('hidden');			
+			});
+		} else {
+			alert('Пожалуйста, заполните необходимые поля');
+		}
+	
+		return false;
+	});
+	
+	$("#call_phone").mask("+7(999)999-99-99",{placeholder:"+7(___)___-__-__"});
 
 	/* LOGO */
 

@@ -1326,6 +1326,20 @@ background-position: -403px -237px;
 	font-size: 18px;
 }
 
+.pagination {
+	text-align: center;
+	font-family: Segoe UI;
+	font-weight: 700;
+	margin-top: 20px;
+}
+.page-numbers {
+	color: #ba2322;
+	margin-right: 10px;
+}
+.page-numbers.current {
+	color: #125d3d;
+}
+
 @media (max-width: 767px) {
 
 	.container {

@@ -31,15 +31,8 @@ get_header(); ?>
 			<div class="container">
 				<div class="grid-inline grid-inline_b">
 					<div class="column column_b">
-						<header class="header grid-inline grid-inline_b">
-							<div class="column column_a">
-								<!--<div class="logo-wrapper">
-									<img class="logo" src="images/logo.png">
-								</div>-->
-							</div>
-							<div class="column column_b">
+						<header class="header column_b_container">
 								<h1 class="page-title v-centered"><span>Страница</span> <span class="page-title_xl">404</span></h1>
-							</div>
 						</header>
 						<div class="column_b_container">
 							<div class="alert-text">

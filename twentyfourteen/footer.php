@@ -93,11 +93,37 @@
 				</form>
 			</div>
 		</div>
+		<div class="popup-wrapper hidden" id="order-success_popup">
+			<div class="container popup-container">
+					<div class="current-order_content">
+						<div class="grid-inline grid-inline_popup v-centered">
+							<div class="column column_a">
+								<i class="icon icon_main-sprite icon_tick"></i>
+							</div>
+							<div class="column column_b popup-text">
+								<p>
+									Ваша завка отправлена успешно.
+								</p>
+								<p>
+									Мы перезвоним Вам в течение 5 минут!
+								</p>
+							</div>
+						</div>
+					</div>
+					<hr class="comb-divider">
+					<div class="current-order_btn-container">
+						<button class="btn btn_red order-submit" data-popup="order-success_popup">Спасибо!
+						</button>
+					</div>
+			</div>
+		</div>
+
 
 
 
 		<script type="text/javascript" src="<?=get_template_directory_uri();?>/vendor/js/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="<?=get_template_directory_uri();?>/vendor/js/jquery.cycle2.min.js"></script>
+		<script type="text/javascript" src="<?=get_template_directory_uri();?>/vendor/js/jquery.maskedinput.min.js"></script>
 		<script type="text/javascript" src="<?=get_template_directory_uri();?>/js/base.js"></script>
         <script type="text/javascript" src="<?=get_template_directory_uri();?>/js/cart.js"></script>
 	</body>
