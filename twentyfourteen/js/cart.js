@@ -1,13 +1,13 @@
 $(document).ready(function(){
     $('body').on('click', '.card-item__button', function(){
     	var button = $(this);
-    	$.get($(button).data('href'))
-    	.done(function() {
-			console.log("get is done!");
+        var href = button.data('href');
+
+    	$.get(encodeURI(button.data('href')))
+    	.done(function(data) {
             $.when(
                 $.post('/wp-admin/admin-ajax.php', 'action=showsmallcart'), 
                 $.post('/wp-admin/admin-ajax.php', 'action=showfullcart')).done(function(resp1, resp2){
-					console.log("post is done!");
                     $('header .column_c').html(resp1[0]);
                     $('#current-order_popup').html(resp2[0]);
                     $().mini_cart();
